@@ -6,8 +6,43 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/l01k
 
 PRODUCT_COPY_FILES += \
+    vendor/lge/l01k/proprietary/vendor/lib/vendor.lge.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.nfc@1.0.so \
+    vendor/lge/l01k/proprietary/vendor/lib/vendor.lge.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.nfc@1.1.so \
+    vendor/lge/l01k/proprietary/vendor/lib64/vendor.lge.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.nfc@1.0.so \
+    vendor/lge/l01k/proprietary/vendor/lib64/vendor.lge.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.nfc@1.1.so \
+    vendor/lge/l01k/proprietary/vendor/bin/hw/vendor.lge.hardware.nfc@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.nfc@1.1-service \
+    vendor/lge/l01k/proprietary/vendor/etc/init/vendor.lge.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.nfc@1.1-service.rc \
+    vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd-RF-firmwaredebug.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF-firmwaredebug.conf \
+    vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd-RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF.conf \
+    vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd22xx.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd22xx.conf \
+    vendor/lge/l01k/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/PublicKey.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/PublicKey.txt \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_AU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_AU.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_CA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_CA.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_CN.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_CN.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_CO.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_CO.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_COM.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_COM.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_HK.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_HK.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_IL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_IL.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_JP.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_JP.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_KR.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_KR.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_LDU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_LDU.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_NZ.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_NZ.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_PL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_PL.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_US.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_nfc.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/config_nfcopen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_nfcopen.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/nfc/target_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/target_list.xml \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b00 \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b01 \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b02 \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.elf \
-    vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.mdt
+    vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.mdt \
+    vendor/lge/l01k/proprietary/vendor/firmware/cxd224x_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd224x_firmware.bin \
+    vendor/lge/l01k/proprietary/vendor/lib/hw/nfc_lg.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_lg.default.so \
+    vendor/lge/l01k/proprietary/vendor/lib/hw/vendor.lge.hardware.nfc@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.nfc@1.1-impl.so \
+    vendor/lge/l01k/proprietary/vendor/lib/libLGnfc_config_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLGnfc_config_vendor.so \
+    vendor/lge/l01k/proprietary/vendor/lib64/hw/nfc_lg.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_lg.default.so \
+    vendor/lge/l01k/proprietary/vendor/lib64/hw/vendor.lge.hardware.nfc@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.nfc@1.1-impl.so \
+    vendor/lge/l01k/proprietary/vendor/lib64/libLGnfc_config_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLGnfc_config_vendor.so
