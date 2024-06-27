@@ -34,6 +34,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/l01k/proprietary/vendor/etc/nfc/config_nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_nfc.xml \
     vendor/lge/l01k/proprietary/vendor/etc/nfc/config_nfcopen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/config_nfcopen.xml \
     vendor/lge/l01k/proprietary/vendor/etc/nfc/target_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/target_list.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/wifi/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan.bin \
+    vendor/lge/l01k/proprietary/vendor/etc/wifi/bdwlan_ch0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan_ch0.bin \
+    vendor/lge/l01k/proprietary/vendor/etc/wifi/bdwlan_ch1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan_ch1.bin \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b00 \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b01 \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b02 \
@@ -46,3 +49,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/l01k/proprietary/vendor/lib64/hw/nfc_lg.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_lg.default.so \
     vendor/lge/l01k/proprietary/vendor/lib64/hw/vendor.lge.hardware.nfc@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.nfc@1.1-impl.so \
     vendor/lge/l01k/proprietary/vendor/lib64/libLGnfc_config_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLGnfc_config_vendor.so
+
+PRODUCT_PACKAGES += \
+    bdwlan_bdwlan_symlink \
+    bdwlan_ch0_bdwlan_ch0_symlink \
+    bdwlan_ch1_bdwlan_ch1_symlink
