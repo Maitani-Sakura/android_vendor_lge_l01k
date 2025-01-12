@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/l01k
 
 PRODUCT_COPY_FILES += \
-    vendor/lge/l01k/proprietary/vendor/lib64/vendor.lge.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.nfc@1.0.so \
-    vendor/lge/l01k/proprietary/vendor/lib64/vendor.lge.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.nfc@1.1.so \
-    vendor/lge/l01k/proprietary/vendor/bin/hw/vendor.lge.hardware.nfc@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.nfc@1.1-service \
     vendor/lge/l01k/proprietary/vendor/etc/init/vendor.lge.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.nfc@1.1-service.rc \
     vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd-RF-firmwaredebug.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF-firmwaredebug.conf \
     vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd-RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF.conf \
@@ -40,10 +37,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.b02 \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.elf \
     vendor/lge/l01k/proprietary/vendor/firmware/a540_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_zap.mdt \
-    vendor/lge/l01k/proprietary/vendor/firmware/cxd224x_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd224x_firmware.bin \
-    vendor/lge/l01k/proprietary/vendor/lib64/hw/nfc_lg.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_lg.default.so \
-    vendor/lge/l01k/proprietary/vendor/lib64/hw/vendor.lge.hardware.nfc@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.nfc@1.1-impl.so \
-    vendor/lge/l01k/proprietary/vendor/lib64/libLGnfc_config_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLGnfc_config_vendor.so
+    vendor/lge/l01k/proprietary/vendor/firmware/cxd224x_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd224x_firmware.bin
+
+PRODUCT_PACKAGES += \
+    nfc_lg.default \
+    vendor.lge.hardware.nfc@1.1-impl \
+    libLGnfc_config_vendor \
+    vendor.lge.hardware.nfc@1.0 \
+    vendor.lge.hardware.nfc@1.1 \
+    vendor.lge.hardware.nfc@1.1-service
 
 PRODUCT_PACKAGES += \
     bdwlan_bdwlan_symlink \
