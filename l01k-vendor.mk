@@ -6,6 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/l01k
 
 PRODUCT_COPY_FILES += \
+    vendor/lge/l01k/proprietary/vendor/etc/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/common.cfg \
+    vendor/lge/l01k/proprietary/vendor/etc/felica/config_felica.xml:$(TARGET_COPY_OUT_VENDOR)/etc/felica/config_felica.xml \
+    vendor/lge/l01k/proprietary/vendor/etc/felica/felica.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/felica.cfg \
+    vendor/lge/l01k/proprietary/vendor/etc/felica/mfc_push.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfc_push.cfg \
+    vendor/lge/l01k/proprietary/vendor/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfm.cfg \
+    vendor/lge/l01k/proprietary/vendor/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfs.cfg \
     vendor/lge/l01k/proprietary/vendor/etc/init/vendor.lge.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.nfc@1.1-service.rc \
     vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd-RF-firmwaredebug.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF-firmwaredebug.conf \
     vendor/lge/l01k/proprietary/vendor/etc/libnfc-cxd-RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF.conf \

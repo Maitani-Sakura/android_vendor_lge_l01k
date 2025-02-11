@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Configure>
+    <Autotune num="8">
+        <!--Default Value-->
+        <!--<value autotuneOnOff="0x01" device="0x00" period="0x80" periodMultiplesFlag="0x00" swMax="0x1F" frac_r="0x01" frac_n="0x00" frac_k="0x0000" frac_cpi="0x02" col="0x1F" timeOut="500"/>-->
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x05" frac_k="7000" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x05" frac_k="2000" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x04" frac_k="64000" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x04" frac_k="59500" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x04" frac_k="49000" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x04" frac_k="54000" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x05" frac_k="15000" col="0x01" timeOut="0xFFFF"/>
+        <value period="0x80" periodMultiplesFlag="0x00" frac_n="0x05" frac_k="23000" col="0x01" timeOut="0xFFFF"/>
+    </Autotune>
+</Configure>
