@@ -6,6 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/l01k
 
 PRODUCT_COPY_FILES += \
+    vendor/lge/l01k/proprietary/product/lib/libnfc-sony-nci.lge.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib/libnfc-sony-nci.lge.so \
+    vendor/lge/l01k/proprietary/product/lib/libLGFeliCa_config.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib/libLGFeliCa_config.so \
+    vendor/lge/l01k/proprietary/product/lib/libLGnfc_config.lge.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib/libLGnfc_config.lge.so \
+    vendor/lge/l01k/proprietary/product/lib/libLGnfc_jni.lge.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib/libLGnfc_jni.lge.so \
+    vendor/lge/l01k/proprietary/product/lib64/libnfc-sony-nci.lge.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib64/libnfc-sony-nci.lge.so \
+    vendor/lge/l01k/proprietary/product/lib64/libLGFeliCa_config.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib64/libLGFeliCa_config.so \
+    vendor/lge/l01k/proprietary/product/lib64/libLGnfc_config.lge.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib64/libLGnfc_config.lge.so \
+    vendor/lge/l01k/proprietary/product/lib64/libLGnfc_jni.lge.so:$(TARGET_COPY_OUT_PRODUCT)/product/lib64/libLGnfc_jni.lge.so \
     vendor/lge/l01k/proprietary/vendor/etc/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/common.cfg \
     vendor/lge/l01k/proprietary/vendor/etc/felica/config_felica.xml:$(TARGET_COPY_OUT_VENDOR)/etc/felica/config_felica.xml \
     vendor/lge/l01k/proprietary/vendor/etc/felica/felica.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/felica.cfg \
@@ -51,7 +59,13 @@ PRODUCT_PACKAGES += \
     libLGnfc_config_vendor \
     vendor.lge.hardware.nfc@1.0 \
     vendor.lge.hardware.nfc@1.1 \
-    vendor.lge.hardware.nfc@1.1-service
+    vendor.lge.hardware.nfc@1.1-service \
+    MobileFeliCaMenuMainApp \
+    MobileFeliCaMenuApp \
+    MobileFeliCaSettingApp \
+    MobileFeliCaWebPlugin \
+    MobileFeliCaWebPluginBoot \
+    MobileFeliCaClient
 
 PRODUCT_PACKAGES += \
     vendor_firmware_wlan_qca_cld_bdwlan_bin \
